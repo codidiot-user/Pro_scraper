@@ -88,7 +88,7 @@ for key in ['page_html', 'url', 'results_df', 'results_text', 'selector', 'table
         st.session_state[key] = None
 
 st.title("👑 QuantWeb Pro Scraper")
-st.markdown("Extract any data, including tables, from websites.")
+st.markdown("Only for EDUCATIONAL PURPOSE. Don't Scrape unwanted site's...")
 st.markdown("---")
 
 st.header("⚙️ Configuration")
@@ -196,3 +196,4 @@ if any([st.session_state.results_df is not None, st.session_state.results_text i
             st.download_button("📥 Download as CSV", csv, "scraped_results.csv", "text/csv")
         else:
             st.warning("Found 0 items matching your query after filtering.")
+
